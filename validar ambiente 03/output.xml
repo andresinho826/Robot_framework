@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230928 01:10:01.904" rpa="false" schemaversion="4">
+<suite id="s1" name="Video3" source="C:\Users\Sopequipo\Documents\robot framework tutorial\curso youtube - nicolas alvarez\validar ambiente 03\video3.robot">
+<test id="s1-t1" name="Visitar google" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230928 01:10:02.042" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20230928 01:10:03.650" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: tcp connect error: Intento de acceso a un socket no permitido por sus permisos de acceso. (os error 10013)</msg>
+<status status="PASS" starttime="20230928 01:10:02.042" endtime="20230928 01:10:06.997"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230928 01:10:11.997" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230928 01:10:06.997" endtime="20230928 01:10:11.997"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230928 01:10:11.997" endtime="20230928 01:10:14.150"/>
+</kw>
+<status status="PASS" starttime="20230928 01:10:02.042" endtime="20230928 01:10:14.150"/>
+</test>
+<status status="PASS" starttime="20230928 01:10:01.904" endtime="20230928 01:10:14.150"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Video3">Video3</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230928 01:10:03.650" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: tcp connect error: Intento de acceso a un socket no permitido por sus permisos de acceso. (os error 10013)</msg>
+</errors>
+</robot>

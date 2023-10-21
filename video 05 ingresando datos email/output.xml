@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230928 14:17:08.676" rpa="false" schemaversion="4">
+<suite id="s1" name="Ingresandodatosvideo5" source="C:\Users\Sopequipo\Documents\robot framework tutorial\curso youtube - nicolas alvarez\video 05 ingresando datos email\ingresandodatosvideo5.robot">
+<test id="s1-t1" name="Ingresar Cuenta De Correo" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://gmail.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230928 14:17:09.056" level="INFO">Opening browser 'Chrome' to base url 'https://gmail.com/'.</msg>
+<msg timestamp="20230928 14:17:13.221" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: tcp connect error: Intento de acceso a un socket no permitido por sus permisos de acceso. (os error 10013)</msg>
+<status status="PASS" starttime="20230928 14:17:09.054" endtime="20230928 14:17:23.402"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:identifierId</arg>
+<arg>andresinho82</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 14:17:23.410" level="INFO">Typing text 'andresinho82' into text field 'id:identifierId'.</msg>
+<status status="PASS" starttime="20230928 14:17:23.402" endtime="20230928 14:17:23.785"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="identifierNext"]/div/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230928 14:17:23.785" level="INFO">Clicking element 'xpath://*[@id="identifierNext"]/div/button/span'.</msg>
+<status status="PASS" starttime="20230928 14:17:23.785" endtime="20230928 14:17:24.117"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230928 14:17:29.117" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230928 14:17:24.117" endtime="20230928 14:17:29.117"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:Passwd</arg>
+<arg>Jacob3004*</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 14:17:29.117" level="INFO">Typing text 'Jacob3004*' into text field 'name:Passwd'.</msg>
+<msg timestamp="20230928 14:17:29.319" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230928 14:17:29.319" level="FAIL">Element with locator 'name:Passwd' not found.</msg>
+<status status="FAIL" starttime="20230928 14:17:29.117" endtime="20230928 14:17:29.319"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="passwordNext"]/div/button/div[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230928 14:17:29.319" endtime="20230928 14:17:29.319"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230928 14:17:29.319" endtime="20230928 14:17:29.319"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230928 14:17:29.319" endtime="20230928 14:17:29.319"/>
+</kw>
+<status status="FAIL" starttime="20230928 14:17:09.044" endtime="20230928 14:17:29.319">Element with locator 'name:Passwd' not found.</status>
+</test>
+<status status="FAIL" starttime="20230928 14:17:08.676" endtime="20230928 14:17:29.319"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Ingresandodatosvideo5">Ingresandodatosvideo5</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230928 14:17:13.221" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: tcp connect error: Intento de acceso a un socket no permitido por sus permisos de acceso. (os error 10013)</msg>
+</errors>
+</robot>
